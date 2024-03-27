@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
-
+import Modal from "../custom-modal/modal";
 
 const Menu = () => (
   <>
@@ -26,6 +26,16 @@ const Menu = () => (
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showModalPopup, setShowModalPopup] = useState(false);
+
+  function handleToggleMoodalPopp() {
+    setShowModalPopup(!showModalPopup);
+    
+  }
+  function onClose() {
+    setShowModalPopup(false);
+  }
+
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
@@ -38,7 +48,14 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-sign">
         <p>Sign In</p>
-        <button type="button">Sign Up</button>
+        <button onClick={handleToggleMoodalPopp} type="button">
+          Sign Up
+        </button>
+        {showModalPopup && (
+          <Modal                     
+            onClose={onClose}
+          />
+        )}
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (

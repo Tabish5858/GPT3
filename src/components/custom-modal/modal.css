@@ -1,0 +1,128 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  animation: animateModal;
+  transition: 1s ease;
+}
+.modal p {
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
+  font-size: 2rem;
+}
+.modal p:hover {
+  filter: invert(100%);
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#loginform {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+#form {
+  background: url("L:\React Websites\gpt3\src\assets\registerform.jpg")
+    no-repeat center center/cover;
+  display: flex;
+  height: 40rem;
+  width: 34rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.signInHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signInHead h1 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+.loginFromInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.loginFromInputsContent {
+  width: 30rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginFromInputsContent label {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.loginFromInputsContent input {
+  padding: 0.5rem 1rem;
+  width: 15rem;
+  outline: none;
+  border: none;
+  font-family: var(--font-family);
+  color: black;
+  border: 2px solid white;
+  font-weight: 700;
+}
+.loginFromInputsContent input:focus {
+  outline: var(--color-text);
+  border: 2px solid var(--color-text);
+}
+#formbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+#instructions {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.instructionsContent a {
+  color: #ff8a71;
+  text-decoration: none;
+  cursor: pointer;
+}
+.instructionsContent a:hover {
+  color: #e25535;
+  text-decoration: underline;
+}
+@media screen and(max-width:600) {
+  #form {
+    height: 30rem;
+    width: 25rem;
+  }
+}
