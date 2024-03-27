@@ -41,8 +41,6 @@
   padding-top: 2rem;
 }
 #form {
-  background: url("L:\React Websites\gpt3\src\assets\registerform.jpg")
-    no-repeat center center/cover;
   display: flex;
   height: 40rem;
   width: 34rem;

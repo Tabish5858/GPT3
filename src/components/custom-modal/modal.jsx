@@ -1,5 +1,6 @@
 import React from "react";
 import "./modal.css";
+import myImage from "../../assets/registerform.jpg";
 
 const Modal = ({ onClose }) => {
   return (
@@ -7,7 +8,7 @@ const Modal = ({ onClose }) => {
       <p onClick={onClose}>❌</p>
 
       <div id="loginform">
-        <form action="" id="form">
+        <form action="" id="form" style={{ background: `url(${myImage})` }}>
           <div className="signInHead">
             <h1>Sign In</h1>
           </div>
