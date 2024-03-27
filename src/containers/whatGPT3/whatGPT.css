@@ -62,6 +62,9 @@
     color: var(--color-subtext);
     cursor: pointer;
 }
+.gpt3__whatgpt3-heading p:hover{
+    text-decoration: underline;
+}
 
 .gpt3__whatgpt3-container {
     display: flex;

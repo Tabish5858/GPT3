@@ -1,6 +1,5 @@
 .gpt3__header {
   display: flex;
-  
 }
 .gpt3__header-content {
   flex: 1;
@@ -65,6 +64,12 @@
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: 1px solid #ff4820;
+}
+.gpt3__header-content__input button:hover {
+  color: #ff4820;
+  background: none;
+  border: 1px solid #ff4820;
 }
 .gpt3__header-content__people {
   width: 100%;
