@@ -48,6 +48,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  border-radius: 1rem;
 }
 .signInHead {
   display: flex;
@@ -63,7 +64,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 .loginFromInputsContent {
   width: 30rem;
@@ -71,6 +72,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.errorHandel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#lower{
+  position: relative;
+  top: 1.2rem;
 }
 .loginFromInputsContent label {
   font-family: var(--font-family);
@@ -87,6 +98,7 @@
   color: black;
   border: 2px solid white;
   font-weight: 700;
+  border-radius: 0.4rem;
 }
 .loginFromInputsContent input:focus {
   outline: var(--color-text);
@@ -96,7 +108,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
+}
+.loginFromInputs button{
+  margin-top: 2rem  ;
 }
 #instructions {
   display: flex;
@@ -123,4 +137,7 @@
     height: 30rem;
     width: 25rem;
   }
+}
+.onMove{
+  
 }

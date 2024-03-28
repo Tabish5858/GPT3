@@ -30,10 +30,11 @@ const Navbar = () => {
 
   function handleToggleMoodalPopp() {
     setShowModalPopup(!showModalPopup);
-    
+    document.body.style.overflow = "hidden";
   }
   function onClose() {
     setShowModalPopup(false);
+    document.body.style.overflow = "auto";
   }
 
   return (
@@ -51,11 +52,7 @@ const Navbar = () => {
         <button onClick={handleToggleMoodalPopp} type="button">
           Sign Up
         </button>
-        {showModalPopup && (
-          <Modal                     
-            onClose={onClose}
-          />
-        )}
+        {showModalPopup && <Modal onClose={onClose} />}
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
