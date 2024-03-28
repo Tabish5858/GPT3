@@ -53,7 +53,7 @@ const Modal = ({ onClose }) => {
             action=""
             onSubmit={handleSubmit(onSubmit)}
             id="form"
-            style={{ background: `url(${myImage})` }}
+            style={{ background: `url(${myImage}) no-repeat center center/cover` }}
           >C
             <div className="signInHead">
               <h1>Sign In</h1>
