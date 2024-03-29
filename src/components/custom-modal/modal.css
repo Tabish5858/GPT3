@@ -110,7 +110,7 @@
   align-items: center;
 }
 .loginFromInputs button{
-  margin-top: 2rem  ;
+  margin-top: 1rem  ;
 }
 #instructions {
   display: flex;
@@ -138,6 +138,6 @@
     width: 25rem;
   }
 }
-.onMove{
-  
+.errorSetting{
+  height: 56px;
 }

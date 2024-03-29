@@ -1,0 +1,22 @@
+.scrollBtn button {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20px;
+  height: 3rem;
+  width: 3rem;
+  font-size: 3rem;
+  padding: 3 4rem;
+  border-radius: 50%;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 99999;
+  filter: brightness(70%);
+}
+.scrollBtn button:hover {
+  filter: brightness(100%);
+  transition: 0.5s ease-in-out;
+}

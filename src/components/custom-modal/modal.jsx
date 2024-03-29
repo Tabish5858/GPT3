@@ -66,7 +66,7 @@ const Modal = ({ onClose }) => {
                 <div>
                   <label htmlFor="name">Your Name:</label>
                 </div>
-                <div>
+                <div className="errorSetting">
                   <input
                     placeholder="Enter Your UserName"
                     {...register("username", {
@@ -92,7 +92,7 @@ const Modal = ({ onClose }) => {
                 <div>
                   <label htmlFor="email">Entre Your Email:</label>
                 </div>
-                <div>
+                <div className="errorSetting">
                   <input
                     {...register("email", {
                       required: { value: true, message: "Filed Required" },
@@ -112,7 +112,7 @@ const Modal = ({ onClose }) => {
                 <div>
                   <label htmlFor="dob">Enter Your Date Of Birth:</label>
                 </div>
-                <div>
+                <div className="errorSetting">
                   <input
                     {...register("dob", {
                       required: { value: true, message: "Field Required" },
@@ -131,7 +131,7 @@ const Modal = ({ onClose }) => {
                 <div>
                   <label htmlFor="age">Age:</label>
                 </div>
-                <div>
+                <div className="errorSetting">
                   <input
                     {...register("age", {
                       required: { value: true, message: "Field Required" },
@@ -152,7 +152,7 @@ const Modal = ({ onClose }) => {
                 <div>
                   <label htmlFor="password">Password:</label>
                 </div>
-                <div>
+                <div className="errorSetting">
                   <input
                     {...register("password", {
                       required: { value: true, message: "Filed Required" },
